@@ -1,9 +1,10 @@
 import './index.css';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <>
-      <h1>Hi!</h1>
+      <Calculator />
     </>
   );
 }
