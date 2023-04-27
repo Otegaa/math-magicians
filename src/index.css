@@ -1,27 +1,76 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
+
+:root {
+  --color-display: #858393;
+  --color-secondary: #e0e0e0;
+  --color-tertiary: #f4913e;
+  --color-white: #fff;
+  --transition: all 0.3s ease-in;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 8rem auto;
+  width: 50%;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.line {
+  padding: 2rem;
+}
+
+.display-calc {
+  background-color: var(--color-display);
+  font-size: 2rem;
+  color: var(--color-white);
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1/-1;
+}
+
+.btn-orange,
+.btn-white {
+  padding: 2.5rem 4rem;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 2px solid var(--color-display);
+  border-right: 2px solid var(--color-display);
+}
+
+.btn-white {
+  background-color: var(--color-secondary);
+}
+
+.btn-orange {
+  background-color: var(--color-tertiary);
+}
+
+.btn-zero {
+  grid-column: 1 / span 2;
 }
