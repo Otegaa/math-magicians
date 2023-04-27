@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
 const CalculatorDisplay = () => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState([0]);
 
-  const handleClick = (num) => {
-    setValue(num);
-  };
+  const handleClick = (num) => (value[0] === 0 ? setValue(num) : setValue([...value, num]));
 
   return (
     <div className="container">
@@ -129,13 +127,25 @@ const CalculatorDisplay = () => {
         +
       </button>
 
-      <button type="button" className="btn-white btn-zero" onClick={(e) => handleClick(e.target.textContent)}>
+      <button
+        type="button"
+        className="btn-white btn-zero"
+        onClick={(e) => handleClick(e.target.textContent)}
+      >
         0
       </button>
-      <button type="button" className="btn-white" onClick={(e) => handleClick(e.target.textContent)}>
+      <button
+        type="button"
+        className="btn-white"
+        onClick={(e) => handleClick(e.target.textContent)}
+      >
         .
       </button>
-      <button type="button" className="btn-orange" onClick={(e) => handleClick(e.target.textContent)}>
+      <button
+        type="button"
+        className="btn-orange"
+        onClick={(e) => handleClick(e.target.textContent)}
+      >
         =
       </button>
     </div>
