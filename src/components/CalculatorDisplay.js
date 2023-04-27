@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 
 const CalculatorDisplay = () => {
-  const [value, setValue] = useState([0]);
+  const [value, setValue] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
 
-  const handleClick = (num) => (value[0] === 0 ? setValue(num) : setValue([...value, num]));
+  const { total, next, operation } = value;
+
+  const handleClick = (num) => setValue(calculate(value, num));
 
   return (
     <div className="container">
       <div className="display-calc line">
-        <span>{value}</span>
+        <span>
+          {total}
+          {operation}
+          {next}
+        </span>
       </div>
 
       <button
