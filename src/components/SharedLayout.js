@@ -5,7 +5,10 @@ import Navbar from './Navbar';
 
 const SharedLayout = () => (
   <>
-    <Navbar />
+    <div className="shared-layout">
+      <h1>Math magicians</h1>
+      <Navbar />
+    </div>
     <Outlet />
   </>
 );
