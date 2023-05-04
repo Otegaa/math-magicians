@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <section>
-    <h3 className="welcome">
+    <p className="welcome">
       Welcome to Math Magicians - your go-to website for all your basic math
       calculations and daily dose of learning inspiration!
       <br />
@@ -16,7 +16,7 @@ const Home = () => (
       Whether you are a student, teacher, or just someone who loves math and
       learning, Math Magicians has got you covered. So come on in and start
       crunching those numbers while feeding your mind with daily inspiration!
-    </h3>
+    </p>
   </section>
 );
 

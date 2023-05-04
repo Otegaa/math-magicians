@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  style={
+    Object {
+      "fontSize": "2rem",
+      "marginTop": "20rem",
+    }
+  }
+>
+  <h2>
+    404!
+  </h2>
+  <p>
+    Page not found
+  </p>
+</section>
+`;
