@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './index.css';
 import Calculator from './pages/Calculator';
 import Quote from './pages/Quote';
-import SharedLayout from './components/CalculatorDisplay';
+import SharedLayout from './components/SharedLayout';
 import Home from './pages/Home';
 
 function App() {
