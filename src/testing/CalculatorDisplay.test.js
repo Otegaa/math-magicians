@@ -17,6 +17,11 @@ describe('Calculator', () => {
   });
 });
 
+test('should show "0" by default', () => {
+  const { getByText } = render(<CalculatorDisplay />);
+  expect(getByText('0')).toBeInTheDocument();
+});
+
 test('should change symbol when the "+/-" button is clicked', () => {
   const { getByText } = render(<CalculatorDisplay />);
   fireEvent.click(getByText('9'));
