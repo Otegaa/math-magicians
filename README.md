@@ -43,6 +43,14 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Project was created with React]**
+- **[Quotes was fetched from API]**
+- **[Pages are routed with react router]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+🚀 Live Demo
+
+- [Render](https://math-magicians-zt9f.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
