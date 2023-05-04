@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "space-between",
+      "margin": "8rem auto",
+      "maxWidth": "80%",
+      "padding": "1rem",
+      "width": "50%",
+    }
+  }
+>
+  <h1>
+    <a
+      aria-current="page"
+      className="heading active"
+      href="/"
+      onClick={[Function]}
+    >
+      Math magicians
+    </a>
+  </h1>
+  <nav
+    style={
+      Object {
+        "display": "flex",
+        "fontSize": "1.7rem",
+        "gap": "1rem",
+      }
+    }
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+    >
+      Home
+    </a>
+    <span>
+      |
+    </span>
+    <a
+      className=""
+      href="/calculator"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      Calculator
+    </a>
+    <span>
+      |
+    </span>
+    <a
+      className=""
+      href="/quotes"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "grey",
+        }
+      }
+    >
+      Quotes
+    </a>
+  </nav>
+</div>
+`;

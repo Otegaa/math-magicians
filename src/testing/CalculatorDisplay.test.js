@@ -1,5 +1,7 @@
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import renderer from 'react-test-renderer';
 import CalculatorDisplay from '../components/CalculatorDisplay';
 
 describe('Calculator', () => {
@@ -22,4 +24,9 @@ test('should change symbol when the "+/-" button is clicked', () => {
   fireEvent.click(getByText('9'));
   fireEvent.click(getByText('+/-'));
   expect(getByText('-9')).toBeInTheDocument();
+});
+
+it('renders correctly', () => {
+  const tree = renderer.create(<CalculatorDisplay />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
