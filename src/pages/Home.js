@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Home = () => (
-  <div>
-    <h3 className="">
+  <section>
+    <h3 className="welcome">
       Welcome to Math Magicians - your go-to website for all your basic math
       calculations and daily dose of learning inspiration!
       <br />
@@ -17,7 +17,7 @@ const Home = () => (
       learning, Math Magicians has got you covered. So come on in and start
       crunching those numbers while feeding your mind with daily inspiration!
     </h3>
-  </div>
+  </section>
 );
 
 export default Home;

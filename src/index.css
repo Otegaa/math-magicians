@@ -5,6 +5,7 @@
   --color-secondary: #e0e0e0;
   --color-tertiary: #f4913e;
   --color-white: #fff;
+  --color-dark-grey: #5a5a5a;
   --transition: all 0.3s ease-in;
 }
 
@@ -31,6 +32,12 @@ body {
   min-height: 100vh;
   font-family: Lato, sans-serif;
   font-weight: 400;
+}
+
+section {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 80%;
 }
 
 .container {
@@ -61,6 +68,7 @@ body {
   border: none;
   border-bottom: 2px solid var(--color-display);
   border-right: 2px solid var(--color-display);
+  cursor: pointer;
 }
 
 .btn-white {
@@ -78,11 +86,22 @@ body {
 .quote {
   width: 50%;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 10rem auto;
   border: 1px solid var(--color-tertiary);
   padding: 2rem;
 }
 
-.quote-list {
+.quote-list,
+.welcome {
   font-size: 2rem;
+}
+
+.welcome {
+  color: var(--color-dark-grey);
+  text-align: justify;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--color-dark-grey);
 }
