@@ -48,7 +48,7 @@ const CalculatorDisplay = () => {
         className="btn-orange"
         onClick={(e) => handleClick(e.target.textContent)}
       >
-        &#xf7;
+        ÷
       </button>
 
       <button
